@@ -194,9 +194,8 @@ public class Converter extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     
     /**
-     * 
-     * @param inches
      * converts inches into centimeters.
+     * @param inches
      * @return centimeters
      */
     private String inch2Cent(double inches) {
@@ -205,9 +204,8 @@ public class Converter extends javax.swing.JFrame {
     }
 
     /**
-     * 
-     * @param feet
      * converts feet into centimeters.
+     * @param feet
      * @return centimeters
      */
     private String feet2Cent(double feet) {
@@ -217,9 +215,8 @@ public class Converter extends javax.swing.JFrame {
     }
     
     /**
-     * 
-     * @param yards
      * converts yards into meters.
+     * @param yards
      * @return meters
      */
     private String yards2Meters(double yards) {
@@ -228,9 +225,8 @@ public class Converter extends javax.swing.JFrame {
     }
 
     /**
-     * 
-     * @param miles
      * converts miles into kilometers.
+     * @param miles
      * @return kilometers
      */
     private String miles2Kilometers(double miles) {
