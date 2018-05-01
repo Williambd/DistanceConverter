@@ -3,7 +3,6 @@
  * created by WilliamBD on 01/05/2018
  * to convert imperial values into metric.
  */
-
 package distanceconverters;
 
 /**
@@ -132,17 +131,21 @@ public class Converter extends javax.swing.JFrame {
         int conversion = ConversionType.getSelectedIndex();
         double measure = Double.parseDouble(Value.getText());
         String valueConverted = " ";
-        
+
         //checks which conversion to do and then runs proper conversion.
-        switch(conversion){
-            case 1: valueConverted = inch2Cent(measure);
-                    break;
-            case 2: valueConverted = feet2Cent(measure);
-                    break;
-            case 3: valueConverted = yards2Meters(measure);
-                    break;
-            case 4: valueConverted = miles2Kilometers(measure);
-                    break;
+        switch (conversion) {
+            case 1:
+                valueConverted = inch2Cent(measure);
+                break;
+            case 2:
+                valueConverted = feet2Cent(measure);
+                break;
+            case 3:
+                valueConverted = yards2Meters(measure);
+                break;
+            case 4:
+                valueConverted = miles2Kilometers(measure);
+                break;
         }
         //outputs the converted value.
         Output.setText(valueConverted);
@@ -192,47 +195,50 @@ public class Converter extends javax.swing.JFrame {
     private javax.swing.JLabel ValuePrompt;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
-    
+
     /**
      * converts inches into centimeters.
+     *
      * @param inches
      * @return centimeters
      */
     private String inch2Cent(double inches) {
-        double centimeters = inches*2.54;
-        return (centimeters+" centimeters");
+        double centimeters = inches * 2.54;
+        return (centimeters + " centimeters");
     }
 
     /**
      * converts feet into centimeters.
+     *
      * @param feet
      * @return centimeters
      */
     private String feet2Cent(double feet) {
-        double centimeters = feet*30;
-        return (centimeters+" feet");
-    
+        double centimeters = feet * 30;
+        return (centimeters + " feet");
+
     }
-    
+
     /**
      * converts yards into meters.
+     *
      * @param yards
      * @return meters
      */
     private String yards2Meters(double yards) {
-        double meters = yards*0.91;
-        return (meters+ " meters");
+        double meters = yards * 0.91;
+        return (meters + " meters");
     }
 
     /**
      * converts miles into kilometers.
+     *
      * @param miles
      * @return kilometers
      */
     private String miles2Kilometers(double miles) {
-        double kilometers = miles*1.6;
-        return (kilometers+" kilometers");
+        double kilometers = miles * 1.6;
+        return (kilometers + " kilometers");
     }
-
 
 }
